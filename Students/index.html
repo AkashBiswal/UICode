@@ -1,0 +1,34 @@
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function loadstudentdetails()
+{
+var ar;
+var table="<tr style='background:red'><th>Id</th><th>Name</th><th>Gender</th><th>Address</th><th>PhoneNo</th></tr>";
+var xhttp=new XMLHttpRequest();
+xhttp.onreadystatechange=function(){
+if(this.readyState==4 && this.status==200)
+{
+ar=JSON.parse(this.responseText);
+for(var i=0;i<ar.length;i++)
+{
+table+="<tr><td>"+ar[i].student_id+"</td><td>"+ar[i].student_name+"</td><td>"+ar[i].student_Gender+"</td><td>"+ar[i].student_Address+"</td><td>"+ar[i].student_PhoneNo+"</td></tr>";
+}
+document.getElementById("table").innerHTML = table;
+}
+}
+xhttp.open("GET", "students.json", true);
+xhttp.send();
+}
+</script>
+<input type="button" onClick="loadstudentdetails()" value="loadstudentdetails()" class="btn btn-success btn-block">
+<table id="table" class="table table-condensed">
+
+</table>

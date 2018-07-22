@@ -1,0 +1,36 @@
+[{
+		"student_id": 1,
+		"student_name": "Akash",
+		"student_Gender": "Male",
+		"student_Address": "BBSR",
+		"student_PhoneNo": 9853044550
+	},
+	{
+		"student_id": 2,
+		"student_name": "sibu",
+		"student_Gender": "Male",
+		"student_Address": "JAJPUR",
+		"student_PhoneNo": 9853044541
+	},
+	{
+		"student_id": 3,
+		"student_name": "Khirod",
+		"student_Gender": "Male",
+		"student_Address": "BANGALORE",
+		"student_PhoneNo": 9855862595
+	},
+	{
+		"student_id": 4,
+		"student_name": "Aarti",
+		"student_Gender": "FeMale",
+		"student_Address": "Hyderabad",
+		"student_PhoneNo": 9885695486
+	},
+	{
+		"student_id": 5,
+		"student_name": "Guddy",
+		"student_Gender": "FeMale",
+		"student_Address": "Odisha",
+		"student_PhoneNo": 9439652698
+	}
+]
